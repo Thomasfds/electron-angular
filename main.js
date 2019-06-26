@@ -1,7 +1,6 @@
 const { app, BrowserWindow } = require('electron')
 const basepath = app.getAppPath();
 let win;
-
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
@@ -11,9 +10,10 @@ function createWindow () {
     icon: `file://${basepath}/dist/<program name="">/assets/logo.png`
   })
 
+  win.loadURL(`file://${basepath}/dist/angular-electron/index.html`)
 
-  win.loadURL(`file://${basepath}/dist/angular-electron/index.html`
-  )
+  win.setMenu(null); // Cache la barre de menu par défaut
+  
   //// uncomment below to open the DevTools.
   // win.webContents.openDevTools()
 
