@@ -1,27 +1,23 @@
-# AngularElectron
+#Angular-electron
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+Base d'un projet pour une application bureau avec Electron et Angular
 
-## Development server
+C'est plus facile que vous ne le pensez
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Si vous savez développer un site, alors vous savez développer une application desktop. Electron est un framework pour créer des applications natives avec les technologies web comme JavaScript, HTML et CSS. Electron s'occupe de la partie technique pour que vous puissiez vous concentrer sur le cœur de votre application. https://electronjs.org/
 
-## Code scaffolding
+##Lancer l'application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Pour lancer l'application, exécuter "npm run electron-build". /!\ Il n'a pas de rafraichissement automatique, il faut développer avec angular et la commande "ng serve".
 
-## Build
+##Construire un package pour une application bureau
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+npm install electron-packager -g npm install electron-packager --save-dev
 
-## Running unit tests
+##Construire un installateur avec Windows electron-packager . --platform=win32
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ça va générer le dossier /angular-electron-win32-x64/
 
-## Running end-to-end tests
+##Construire un installateur avec MAC OS electron-packager . --platform=darwin
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ça va générer le dossier /angular-electron-darwin-x64/
