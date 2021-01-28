@@ -14,7 +14,7 @@
   },
   "private": true,
   "dependencies": {
-    "electron": "^1.4.13",
+    "electron": "^9.4.0",
     "@angular/animations": "~8.0.1",
     "@angular/common": "~8.0.1",
     "@angular/compiler": "~8.0.1",
@@ -36,7 +36,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
-    "electron": "^5.0.5",
+    "electron": "^9.4.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
